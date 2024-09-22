@@ -7,9 +7,15 @@
 </template>
 
 <script setup>
+import { useHabitsStore } from '~/stores/habits'
+
 // component imports
 import HabitForm from '~/components/HabitForm.vue'
 import HabitList from '~/components/HabitList.vue'
+
+const habitsStore = useHabitsStore()
+console.log(habitsStore.habits);
+
 
 </script>
 
